@@ -9,7 +9,13 @@
   <meta property="og:description" content="El tradicional juego latinoamericano de Sapo/Rana, ahora en realidad virtual. Compatible con Meta Quest 2, Pro y 3." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -46,9 +52,16 @@
         <p class="hero-subtitle">El tradicional Juego Latinoamericano de Sapo/Rana, ahora en Realidad Virtual</p>
         <a href="#download" class="hero-cta">
           <span>Descargar - Meta VR</span>
+          <svg class="cta-arrow" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
         <a href="#demo" class="hero-cta">
           <span>Jugar demo - Web</span>
+          <svg class="cta-arrow" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M19 12l-7-7M19 12l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
       </div>
     </section>
@@ -149,6 +162,61 @@
     </section>
   </main>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact-section-subtitle">¿Tienes preguntas, sugerencias o quieres colaborar? ¡Envíame un mensaje!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="developer-card">
+            <div class="developer-logo">
+              <img src="/machine1.png" alt="Foto del desarrollador" class="developer-logo-img">
+            </div>
+            <h3 class="developer-title">Desarrollador</h3>
+            <p class="developer-name">Mauricio Meza Burbano</p>
+            <p class="developer-description">
+              Desarrollador de videojuegos especializado en realidad virtual y experiencias inmersivas. 
+            </p>
+            <div class="developer-links">
+              <a href="https://mauriciomeza.github.io/dev_portfolio/" target="_blank" class="developer-link">
+                <svg class="link-icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Portfolio
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form class="contact-form" action="https://formspree.io/f/xanjrokl" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-input" placeholder="Nombre" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            
+            <button type="submit" class="form-submit">
+              <svg class="submit-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -167,7 +235,7 @@
           <h4 class="footer-title">Información</h4>
           <ul class="footer-links">
             <li><a href="https://mauriciomeza.github.io/dev_portfolio/">Desarrollador</a></li>
-            <li><a href="https://www.meta.com/experiences/" target="_blank">Politica de Privacidad</a></li>
+            <li><a href="./privacy.html">Politica de Privacidad</a></li>
           </ul>
         </div>
 
