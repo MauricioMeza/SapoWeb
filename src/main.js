@@ -1,4 +1,3 @@
-import './style.css';
 
 // Smooth scrolling for navigation links
 function scrollToSection(sectionId) {

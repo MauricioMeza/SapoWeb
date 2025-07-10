@@ -1249,3 +1249,24 @@ a {
     height: 150px;
   }
 }
+
+/* Privacy Policy Box Styles */
+.privacy-box {
+  background: var(--glass-bg);
+  border: 1.5px solid var(--glass-border);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(31,51,39,0.13);
+  padding: 2.5rem 2rem;
+  margin: 3rem auto 2rem auto;
+  max-width: 700px;
+}
+.privacy-box ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .privacy-box {
+    padding: 1.2rem 0.5rem;
+  }
+}
