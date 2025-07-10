@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAPO VR - El Juego Tradicional en Realidad Virtual</title>
+  <meta name="description" content="El tradicional juego latinoamericano de Sapo/Rana, ahora en realidad virtual. Compatible con Meta Quest 2, Pro y 3. ¡Descarga gratis!" />
+  <meta property="og:title" content="SAPO VR - El Juego Tradicional en Realidad Virtual" />
+  <meta property="og:description" content="El tradicional juego latinoamericano de Sapo/Rana, ahora en realidad virtual. Compatible con Meta Quest 2, Pro y 3." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <img src="/logo.png" alt="SAPO VR" class="nav-logo-img">
+          <span class="nav-brand">SAPO VR</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#trailer" class="nav-link" >Video</a>
+          <a href="#features" class="nav-link" >Características</a>
+          <a href="#download" class="nav-link" >Descargar</a>
+          <a href="#demo" class="nav-link" >Demo Web</a>
+          <a href="#contact" class="nav-link" >Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./public/TrailerMicro.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">SAPO VR</h1>
+        <p class="hero-subtitle">El tradicional Juego Latinoamericano de Sapo/Rana, ahora en Realidad Virtual</p>
+        <a href="#download" class="hero-cta">
+          <span>Descargar - Meta VR</span>
+        </a>
+        <a href="#demo" class="hero-cta">
+          <span>Jugar demo - Web</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Trailer Section -->
+    <section id="trailer" class="trailer">
+      <div class="container">
+        <h2 class="section-title">Video Demo</h2>
+        <div class="trailer-content">
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/qaLByrMLXdc" 
+              title="SAPO VR - Trailer Oficial"
+              frameborder="0" 
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="trailer-description">
+            <p>Descubre la experiencia de SAPO VR en este video demo, tomado dentro de la Realidad Virtual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Características</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🏞️</div>
+            <h3 class="feature-title">Experiencia Inmersiva</h3>
+            <p class="feature-description">Una fiel recreación del juego, dentro de un entorno muy tradicional.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3 class="feature-title">Físicas realistas</h3>
+            <p class="feature-description">Motor de fisicas que simula los lanzamientos con alta fidelidad, como si fueran reales.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🥽</div>
+            <h3 class="feature-title">Para visores Meta Quest</h3>
+            <p class="feature-description">Compatible con dispositivos Meta Quest (2, Pro, 3). Haciendo uso de sus controladores de movimiento.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3 class="feature-title">Sin Conexión</h3>
+            <p class="feature-description">Descargalo gratis y juega offline en cualquier momento y lugar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+      <div class="container">
+        <div class="download-content">
+          <h2 class="download-title">¡Descarga Gratis!</h2>
+          <p class="download-subtitle">Compatible con Meta Quest 2, Pro y 3</p>
+          <div class="download-preview">
+            <a href="https://www.meta.com/experiences/" target="_blank">
+              <img src="/coversSquareAI.png" alt="SAPO VR - Disponible en Meta Store" class="download-cover-image">
+            </a>
+          </div>
+          <a href="https://www.meta.com/experiences/" target="_blank" class="download-btn">
+            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Descargar en Meta Store
+          </a>
+          <p class="download-note">* No requiere conexión a internet</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Web Section -->
+    <section id="demo" class="demo">
+      <div class="container">
+        <div class="demo-content">
+          <h2 class="demo-title">Juega ahora en la Web</h2>
+          <p class="demo-subtitle">Experimenta el primer prototipo que sirvio como inspiración para el proyecto, creado para jugarse dede la web</p>
+          <div class="demo-preview">
+            <a href="https://mauriciomeza.github.io/Sapo3D/" target="_blank">
+              <img src="/web2.png" alt="Vista previa del demo web de SAPO VR" class="demo-preview-image">
+            </a>
+          </div>
+          <a href="https://mauriciomeza.github.io/Sapo3D/" target="_blank" class="demo-btn">
+            <span>Jugar Demo</span>
+            <svg class="demo-arrow" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="/logo.png" alt="SAPO VR" class="footer-logo-img">
+            <span class="footer-brand">SAPO VR</span>
+          </div>
+          <p class="footer-description">
+            El tradicional juego latinoamericano de Sapo/Rana, ahora disponible en realidad virtual para dispositivos Meta Quest.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Información</h4>
+          <ul class="footer-links">
+            <li><a href="https://mauriciomeza.github.io/dev_portfolio/">Desarrollador</a></li>
+            <li><a href="https://www.meta.com/experiences/" target="_blank">Politica de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Plataformas</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.meta.com/experiences/" target="_blank">Meta Quest Store</a></li>
+            <li><a href="https://mauriciomeza.github.io/Sapo3D/">Demo Web</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SAPO VR. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
