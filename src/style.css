@@ -1270,3 +1270,190 @@ a {
     padding: 1.2rem 0.5rem;
   }
 }
+
+/* Press Kit custom styles */
+
+/* Hero section for press kit */
+.press-kit-hero {
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  padding: 0.5rem 0.2rem !important;
+  margin-top: 70px;
+  text-align: center;
+}
+.press-kit-hero h1 {
+  font-family: var(--font-primary);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  color: var(--accent-gold);
+  margin-bottom: 0.1rem;
+}
+.press-kit-hero p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Navigation for press kit */
+.press-kit-nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+.press-kit-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.press-kit-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: var(--transition-smooth);
+  border: 1px solid transparent;
+}
+.press-kit-nav a:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+/* Section and content blocks */
+.press-section {
+  padding: 1.7rem 0.3rem 1.7rem 0.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.press-section:last-child {
+  border-bottom: none;
+}
+.press-section h2 {
+  font-family: var(--font-primary);
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.press-section h3 {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin: 0.7rem 0 0.3rem;
+}
+.press-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+}
+ul {
+  padding-left: 2em;
+}
+
+/* Fact sheet boxes */
+.fact-sheet {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  margin: 1.2rem 0;
+}
+.fact-sheet h4 {
+  color: var(--accent-gold);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.fact-sheet p, .fact-sheet ul, .fact-sheet li {
+  margin-bottom: 0.3rem;
+  color: var(--text-light);
+  font-size: 0.98rem;
+}
+
+/* Media and resources gallery */
+.media-gallery, .recursos-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+.media-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.media-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.media-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.media-item-content {
+  padding: 1.5rem;
+}
+.media-item h4 {
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+.media-item p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Download link style (if used) */
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+.download-link:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+.download-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* General link style for press kit */
+a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .press-kit-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .media-gallery {
+    grid-template-columns: 1fr;
+  }
+  .press-section {
+    padding: 2rem 1rem;
+  }
+}
