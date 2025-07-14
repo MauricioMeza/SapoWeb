@@ -915,8 +915,14 @@ a {
   }
   
   .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .footer-section {
+    align-items: center;
+    text-align: center;
   }
   
   .footer-logo-img {
@@ -1247,6 +1253,16 @@ a {
   .developer-logo-img {
     width: 150px;
     height: 150px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    text-align: center;
+  }
+  .footer-section {
+    align-items: center;
+    text-align: center;
   }
 }
 
