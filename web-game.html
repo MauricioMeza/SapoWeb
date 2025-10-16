@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Web - SAPO VR | El Juego Tradicional en Realidad Virtual</title>
+  <meta name="description" content="Press Kit oficial de SAPO VR - El tradicional juego latinoamericano de Sapo/Rana, ahora en realidad virtual. Información para medios y prensa." />
+  <meta property="og:title" content="Press Kit - SAPO VR | El Juego Tradicional en Realidad Virtual" />
+  <meta property="og:description" content="Press Kit oficial de SAPO VR - El tradicional juego latinoamericano de Sapo/Rana, ahora en realidad virtual." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <img src="public/logo.png" alt="SAPO VR" class="nav-logo-img">
+          <span class="nav-brand">SAPO VR</span>
+        </div>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="index.html#trailer" class="nav-link">Video</a>
+          <a href="index.html#features" class="nav-link">Características</a>
+          <a href="index.html#download" class="nav-link">Descargar</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Press Kit Hero -->
+    <section class="press-kit-hero" style="background: var(--primary-green);">
+      <div class="container">
+        <h1>Prototipo Web del juego de SAPO</h1>
+
+        <div class="webgl-content">
+          <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        </div>
+        
+        <div class="press-content">          
+          <div class="fact-sheet">
+            <h4>Instrucciones</h4>
+            <p>Apunta con el mouse hacia el tablero y haz click para lanzar la ficha. <br> Si cae en un agujero, obtendrás la puntuación de ese agujero. <br> Si cae en la boca del sapo, obtendrás la puntuación más alta. <br> ¡Intenta obtener la mayor puntuación posible!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="public/logo.png" alt="SAPO VR" class="footer-logo-img">
+            <span class="footer-brand">SAPO VR</span>
+          </div>
+          <p class="footer-description">
+            El tradicional juego latinoamericano de Sapo/Rana, ahora disponible en realidad virtual para dispositivos Meta Quest.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title">Información</h4>
+          <ul class="footer-links">
+            <li><a href="https://mauriciomeza.github.io/dev_portfolio/">Desarrollador</a></li>
+            <li><a href="privacy.html">Política de Privacidad</a></li>
+            <li><a href="press-kit.html">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Plataformas</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.meta.com/experiences/" target="_blank">Meta Quest Store</a></li>
+            <li><a href="./web-game.html">Demo Web</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 SAPO VR. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html> 
